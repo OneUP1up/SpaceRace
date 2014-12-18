@@ -1,0 +1,13 @@
+//Put the leve/score
+PFont score;
+void setup() {
+  size(1000, 1000);
+  score = createFont("Arial",72,true);
+  noLoop();
+  smooth();
+} 
+ 
+void draw() {
+  textFont(score,72);           
+  text("0",125,175);            
+}
