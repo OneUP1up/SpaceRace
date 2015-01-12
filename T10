@@ -4,7 +4,7 @@ PImage img;
 
 void setup(){
   size(500,500);
-img = loadImage("vessel.png");
+img = loadImage("UFO.png");
 }
 void draw(){
 background(0);
