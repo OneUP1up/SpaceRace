@@ -1,6 +1,0 @@
-//Move vessel down with keyboard
-void keyPressed() {
-  if (keyCode==DOWN) {
-    background(0);
-  }  
-}
