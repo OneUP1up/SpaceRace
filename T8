@@ -9,5 +9,5 @@ void setup() {
  
 void draw() {
   textFont(titulo,72);           
-  text("SPACE RACE",120,100);            
+  text("SPACE RACER",120,100);            
 }
