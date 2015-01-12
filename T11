@@ -1,6 +1,6 @@
 PImage img;
 void setup(){
-img = loadImage("characters.jpg");
+img = loadImage("vessel.png");
 }
 void draw(){
 background(0);
