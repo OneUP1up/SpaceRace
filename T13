@@ -7,6 +7,6 @@ void setup() {
 } 
  
 void draw() {
-  textFont(score,72);           
-  text("0",125,175);            
+  textFont(score,30);           
+  text("0",460,50);            
 }
