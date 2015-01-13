@@ -7,6 +7,6 @@ void setup() {
 } 
  
 void draw() {
-  textFont(titulo,72);           
-  text("SPACE RACE",120,100);            
+  textFont(titulo,50);           
+  text("SPACE RACE",90,100);            
 }
