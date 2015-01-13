@@ -1,3 +1,26 @@
+PImage img;
+PImage img1;
+PFont titulo;
+PFont score;
 void setup(){
 size(500,700);
-}
+background (0); 
+titulo = createFont("Verdana",72,true); 
+noLoop(); 
+smooth(); 
+img = loadImage("UFO.png");
+img1 = loadImage("vessel.png");
+score = createFont("Arial",72,true); 
+noLoop(); 
+smooth(); 
+}  
+   
+void draw() { 
+textFont(titulo,72);            
+text("SPACE RACE",120,100);
+image(img, 0, 0, width/5, height/5); 
+image(img1, 0, 0, width/5, height/5);
+textFont(score,72);            
+text("0",125,175);   
+ } 
+
