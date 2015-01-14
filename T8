@@ -1,8 +1,10 @@
 //This is for the black background
-
+PImage bg;
 void setup(){
-background (0);
+bg=loadImage("background.gif");
 }
 
 void draw(){
+  background(bg);
 }
+
