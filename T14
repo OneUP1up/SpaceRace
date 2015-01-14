@@ -1,0 +1,21 @@
+//move starts right
+
+PImage UFO;
+int UFOX;
+int UFOY;
+
+void setup(){
+ size(500,700);
+UFO=loadImage("UFO.gif");
+UFOY=int(random(0,500));
+}
+void draw(){
+  image(UFO,UFOX,UFOY);
+ UFOX=UFOX+1;
+   if(UFOX==500){
+    UFOY=int(random(0,500));
+    UFOX=0;
+  }
+ 
+}
+
