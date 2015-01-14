@@ -1,26 +1,58 @@
-PImage img;
-PImage img1;
+// code
+PImage bg;
+PImage UFO;
+PImage vessel;
 PFont titulo;
 PFont score;
+
+int UFOX;
+int UFOY;
+int vesselX=250;
+int vesselY=500;
+int i=180;
+int s=second();
+int counter=0;
+
 void setup(){
-size(500,700);
-background (0); 
+ size(500,700);
+bg=loadImage("background.gif");
+UFO=loadImage("UFO.gif");
+vessel=loadImage("vessel.png");
+UFOY=int(random(0,500));
 titulo = createFont("Verdana",72,true); 
 noLoop(); 
 smooth(); 
-img = loadImage("UFO.png");
-img1 = loadImage("vessel.png");
 score = createFont("Arial",72,true); 
 noLoop(); 
 smooth(); 
-}  
-   
-void draw() { 
-textFont(titulo,50);            
+}
+
+void draw(){
+  background(bg);
+  image(UFO,UFOX,UFOY);
+  image(vessel,vesselX,vesselY,40,60);
+ UFOX=UFOX+1;
+   if(UFOX==500){
+    UFOY=int(random(0,500));
+    UFOX=0;
+  }
+    stroke(255);
+  strokeWeight(10);
+  line(450,180,450,i);
+  i=i+1;
+  textFont(titulo,50);            
 text("SPACE RACE",90,100);
-image(img, 0, 0, width/5, height/5); 
-image(img1, 0, 0, width/5, height/5);
 textFont(score,30);            
 text("0",460,50);   
- } 
+}
 
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+    vesselY=vesselY-5;
+  } 
+  else if (keyCode == DOWN) {
+    vesselY=vesselY+4;
+  }
+  }
+}
