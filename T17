@@ -1,1 +1,25 @@
 //Move vessel down with keyboard
+
+PImage vessel;
+int vesselX=250;
+int vesselY=500;
+
+
+void setup(){
+ size(500,700);
+vessel=loadImage("vessel.png");
+}
+
+void draw(){
+
+  image(vessel,vesselX,vesselY,40,60);
+
+}
+
+void keyPressed() {
+  if (key == CODED) {
+ if (keyCode == DOWN) {
+    vesselY=vesselY+4;
+  }
+  }
+}
