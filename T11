@@ -1,8 +1,7 @@
-PImage img;
+PImage UFO;
 void setup(){
-img = loadImage("vessel.png");
+UFO=loadImage("UFO.gif");
 }
 void draw(){
-background(0);
-image(img, 0, 0, width/5, height/5);;
+image(UFO,UFOX,UFOY);
 }
