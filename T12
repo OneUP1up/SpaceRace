@@ -1,0 +1,16 @@
+// it is the timer
+int i=180;
+int s=second();
+int counter=0;
+
+void setup(){
+  size(500,700);
+}
+void draw(){
+  stroke(255);
+  strokeWeight(10);
+  line(450,180,450,i);
+  i=i+1;
+  }
+  
+ 
